@@ -5,17 +5,18 @@ import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailsComponent } from './video-details/video-details.component';
 
 const appRoutes: Routes = [
-	{
-		path: '',
-		component: VideoListComponent,
-	},
+	
 	{
 		path: 'videos',
 		component: VideoListComponent,
 	},
 	{
-		path: 'videos:id',
+		path: 'videos/:id',
 		component: VideoDetailsComponent,
+	},
+	{
+		path: '',
+		component: VideoListComponent,
 	}
 
 ]
