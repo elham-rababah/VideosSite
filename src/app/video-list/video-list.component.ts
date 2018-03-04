@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer  } from '@angular/platform-browser'
 
 @Component({
 	selector: 'app-video-list',
@@ -27,13 +26,12 @@ export class VideoListComponent implements OnInit {
 			id: "aUjQv8QCQaM"
 		},
 	]
-	constructor(private domSanitizer: DomSanitizer) { }
 
 	ngOnInit() {
 	}
 
 	generateEmbedUrl (id :string){
-		return this.domSanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + id);
+		return 'https://www.youtube.com/embed/' + id;
 	}
 
 }
