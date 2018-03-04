@@ -1,6 +1,6 @@
 <h1>
   {{title}}
 </h1>
-<p *ngFor="let item Of videoList">
- <a href='videos/{{item.name}}' > {{item.name}}</a>
-</p>
+<div *ngFor="let item Of videoList">
+ <iframe width="560" height="315" [src]="generateEmbedUrl(item.id)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
