@@ -2,5 +2,5 @@
   {{title}}
 </h1>
 <div *ngFor="let item Of videoList">
- <iframe width="560" height="315" [src]="generateEmbedUrl(item.id) | safe " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<iframe width="560" height="315" [src]="generateEmbedUrl(item.id) | safe " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
