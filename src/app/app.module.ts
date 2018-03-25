@@ -11,6 +11,8 @@ import { SafePipe } from './utility/safe.pipe';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { HomeVideosListComponent } from './home-videos-list/home-videos-list.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
+    LeftMenuComponent,
+    HomeVideosListComponent,
   ],
   imports: [
     AppRouteingModule,
