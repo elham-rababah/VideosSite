@@ -8,6 +8,9 @@ import { AppRouteingModule } from './app.routeing';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailsComponent } from './video-details/video-details.component';
 import { SafePipe } from './utility/safe.pipe';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { SafePipe } from './utility/safe.pipe';
     VideoListComponent,
     VideoDetailsComponent,
     SafePipe,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     AppRouteingModule,
